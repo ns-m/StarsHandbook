@@ -1,3 +1,5 @@
 package com.example.starshandbook
 
-data class Star(val imageId: Int, val title: String, val description: String)
+import java.io.Serializable
+
+data class Star(val imageId: Int, val title: String, val description: String): Serializable
