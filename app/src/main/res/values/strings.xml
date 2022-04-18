@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">StarsHandbook</string>
     <string name="button">Light a Star</string>
+    <string name="buttonNext">Next img</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="button_done">Done</string>
+    <string name="todo">TODO</string>
 </resources>
