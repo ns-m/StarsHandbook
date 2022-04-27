@@ -3,14 +3,15 @@ package com.example.starshandbook
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.starshandbook.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), StarAdapter.Listener {
     lateinit var binding: ActivityMainBinding
-    private val adapter = StarAdapter()
+    private val adapter = StarAdapter(this)
     private val adjsList = listOf("brightest", "distant",  "beautiful",  "bewitching")
     private var indx = 0
     private var indxAdjs = (0..3).random()
@@ -39,5 +40,9 @@ class MainActivity : AppCompatActivity() {
                 editLauncher?.launch(Intent(this@MainActivity, EditActivity::class.java))
             }
         }
+    }
+
+    override fun onClick(star: Star) {
+        Toast.makeText(this, "You push on the ${star.title}", Toast.LENGTH_LONG).show()
     }
 }
