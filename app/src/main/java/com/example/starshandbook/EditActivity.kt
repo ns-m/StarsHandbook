@@ -22,7 +22,7 @@ class EditActivity : AppCompatActivity() {
             imgId = imgIdList[indxImg]
             imageViewEdit.setImageResource(imgId)
         }
-        buttonDone.setOnClickListener {
+        bttnDone.setOnClickListener {
             val star = Star(imgId, editTextTitle.text.toString(), editTextDesc.text.toString())
             val editIntent = Intent().apply {
                 putExtra("star", star)
