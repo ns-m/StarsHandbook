@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity(), StarAdapter.Listener {
     lateinit var binding: ActivityMainBinding
     private val adapter = StarAdapter(this)
     private val adjsList = listOf("brightest", "distant",  "beautiful",  "bewitching")
-    private var indx = 0
+//    private var indx = 0
     private var indxAdjs = (0..3).random()
     private var editLauncher: ActivityResultLauncher<Intent>? = null
 
