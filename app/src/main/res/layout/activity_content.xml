@@ -42,25 +42,29 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/textViewTitleContent"
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
-                android:layout_weight="1"
                 android:gravity="center"
                 android:padding="5dp"
-                android:text="TextView"
+                android:text="@string/title"
+                android:textAllCaps="true"
                 android:textColor="@color/black"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/textViewDescContent"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="TextView" />
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/description"
+                android:textColor="@color/my_blue"
+                android:textSize="12sp" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

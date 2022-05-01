@@ -43,6 +43,9 @@ class MainActivity : AppCompatActivity(), StarAdapter.Listener {
     }
 
     override fun onClick(star: Star) {
-        Toast.makeText(this, "You push on the ${star.title}", Toast.LENGTH_LONG).show()
+//        Toast.makeText(this, "You push on the ${star.title}", Toast.LENGTH_LONG).show()
+        startActivity(Intent(this, ContentActivity::class.java).apply {
+
+        })
     }
 }
